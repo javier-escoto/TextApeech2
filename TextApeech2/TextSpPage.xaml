@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TextApeech2.TextSpPage">
+    <ContentPage.Content >
+        
+        <StackLayout BackgroundColor="#4DB294">
+            <Label Text="TEXT TO SPEECH"  HorizontalOptions="Center" TextColor="Black" FontSize="Title" />
+
+            <Entry x:Name="txtToSpeech"  Placeholder="ingrese el texto"  />
+            <Label Text="Tono" />
+
+            <Slider  Minimum="0" Maximum="2" Value="1" x:Name="sliderPitch"  /> 
+            <Label Text="Velocidad"  />
+
+            <Slider    Minimum="0" Maximum="2" Value="1" x:Name="sliderRate" />
+            <Label Text="Volumen" />
+            <Slider    Minimum="0" Maximum="2" Value="1" x:Name="sliderVolume" />
+            
+            <Switch  x:Name="useDafaults" />
+
+
+            <Button HorizontalOptions="Center" x:Name="btnlanguage" Text="Idioma" Clicked="Button_Clicked" CornerRadius="15"  />
+
+            <Button HorizontalOptions="Center" x:Name="btnSpeak" Text="Speak" Clicked="Button_Clicked_1" CornerRadius="15"  />
+
+            <Button HorizontalOptions="Center" x:Name="btnclean" Text="Limpiar" Clicked="btnclean_Clicked" CornerRadius="15" />
+
+            <Label Text="GRUPO 5"  HorizontalOptions="Start" TextColor="Black" FontSize="Title" />
+
+            <Image Source="logo.jpg" HorizontalOptions="CenterAndExpand"  />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
